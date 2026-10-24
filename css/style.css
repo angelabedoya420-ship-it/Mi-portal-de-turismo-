@@ -1,0 +1,101 @@
+/* ===== Variables ===== */
+:root {
+  --verde: #1f4d3a;
+  --verde-claro: #2f6b4f;
+  --ambar: #e0a526;
+  --crema: #f7f3e8;
+  --texto: #22302a;
+  --fuente-titulo: Georgia, "Times New Roman", serif;
+  --fuente-texto: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ===== Base ===== */
+body {
+  font-family: var(--fuente-texto);
+  color: var(--texto);
+  background: #fff;
+  line-height: 1.65;
+}
+h1, h2, h3, .navbar-brand { font-family: var(--fuente-titulo); }
+h1, h2, h3 { color: var(--verde); }
+
+.skip-link { position: absolute; left: -999px; background: #fff; padding: .5rem; }
+.skip-link:focus { left: .5rem; top: .5rem; z-index: 2000; }
+
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--ambar);
+  outline-offset: 2px;
+}
+
+/* ===== Navegación ===== */
+.navbar-portal { background: var(--verde); }
+.navbar-portal .navbar-brand { color: #fff; font-size: 1.4rem; }
+.navbar-brand span { color: var(--ambar); }
+.navbar-portal .nav-link { color: #e9efe9; }
+.navbar-portal .nav-link:hover,
+.navbar-portal .nav-link.active { color: var(--ambar); }
+.navbar-portal .navbar-toggler { border-color: #fff; background: #fff; }
+
+/* ===== Portada ===== */
+.hero {
+  background-color: var(--verde);
+  background-image: linear-gradient(135deg, rgba(31,77,58,.92), rgba(47,107,79,.8)), url("../img/mirador.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 6rem 0 5rem;
+}
+.hero h1 { color: #fff; font-size: clamp(2.2rem, 6vw, 4rem); }
+.hero .lead { max-width: 34rem; margin: 1rem 0 2rem; }
+
+/* ===== Botones y fondos ===== */
+.btn-portal { background: var(--ambar); color: #2a1f05; border: 0; font-weight: 600; }
+.btn-portal:hover { background: #c98f15; color: #2a1f05; }
+.bg-soft { background: var(--crema); }
+
+/* ===== Tarjetas ===== */
+.card-portal, .card { border: 1px solid #e3dccb; border-radius: .5rem; }
+.card-title { color: var(--verde); }
+.card-img-top { height: 200px; object-fit: cover; }
+
+/* ===== Información ===== */
+.nota {
+  background: var(--crema);
+  border-left: 4px solid var(--ambar);
+  padding: 1.2rem;
+}
+
+/* ===== Galería ===== */
+.galeria-item { margin: 0; }
+.galeria-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: .4rem;
+}
+.figure-caption { text-align: center; font-size: .95rem; margin-top: .4rem; }
+
+/* ===== Tablas ===== */
+.tabla-portal thead { background: var(--verde); color: #fff; }
+.tabla-portal th { background: var(--verde); color: #fff; }
+.tabla-portal tfoot td { font-weight: 700; background: var(--crema); }
+.tabla-portal caption { caption-side: top; padding: .5rem 0; font-size: .95rem; }
+
+/* ===== Formulario ===== */
+.msg { font-size: .875rem; min-height: 1.2rem; }
+.msg.error { color: #b3261e; }
+.msg.ok { color: #1e7a46; }
+
+/* ===== Pie de página ===== */
+.footer-portal {
+  background: var(--verde);
+  color: #dbe6df;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+}
+
+/* ===== Accesibilidad ===== */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

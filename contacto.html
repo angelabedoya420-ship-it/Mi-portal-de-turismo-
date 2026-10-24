@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Escríbenos para planear tu visita a Concepción - Antioquia.">
+  <meta name="keywords" content="turismo, Concepción Antioquia, Oriente antioqueño, Colombia, viajes, pueblos">
+  <meta name="author" content="Angela María Bedoya Holguin">
+  <meta property="og:title" content="Contacto | Concepción - Antioquia">
+  <meta property="og:description" content="Escríbenos para planear tu visita a Concepción - Antioquia.">
+  <meta property="og:type" content="website">
+  <title>Contacto | Concepción - Antioquia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-portal" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Concepción <span>Antioquia</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="informacion.html">Información</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="tabla.html">Sitios y datos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contacto.html" aria-current="page">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <div class="container py-5">
+      <h1>Contacto</h1>
+      <p>Cuéntanos qué necesitas y te responderemos pronto.</p>
+
+      <div class="row">
+        <div class="col-lg-7">
+          <form id="formContacto" novalidate aria-label="Formulario de contacto">
+
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" id="nombre" class="form-control" aria-describedby="e-nombre" autocomplete="name">
+              <div id="e-nombre" class="msg" aria-live="polite"></div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" id="email" class="form-control" aria-describedby="e-email" autocomplete="email">
+              <div id="e-email" class="msg" aria-live="polite"></div>
+            </div>
+
+            <div class="mb-3">
+              <label for="motivo" class="form-label">Motivo</label>
+              <select id="motivo" class="form-select" aria-describedby="e-motivo">
+                <option value="">Selecciona una opción</option>
+                <option>Información de rutas</option>
+                <option>Hospedaje</option>
+                <option>Sugerencias</option>
+              </select>
+              <div id="e-motivo" class="msg" aria-live="polite"></div>
+            </div>
+
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea id="mensaje" rows="4" class="form-control" aria-describedby="e-mensaje"></textarea>
+              <div id="e-mensaje" class="msg" aria-live="polite"></div>
+            </div>
+
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="acepto" aria-describedby="e-acepto">
+              <label class="form-check-label" for="acepto">Acepto el tratamiento de mis datos para responder este mensaje</label>
+              <div id="e-acepto" class="msg" aria-live="polite"></div>
+            </div>
+
+            <button type="submit" class="btn btn-portal">Enviar mensaje</button>
+            <div id="resultado" class="mt-3" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-portal">
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+      <p class="mb-0">&copy; 2026 Portal turístico de Concepción - Antioquia. Contenido original.</p>
+      <p class="mb-0">Proyecto académico - Herramientas de Programación III</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
